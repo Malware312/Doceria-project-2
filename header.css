@@ -1,0 +1,92 @@
+body {
+  color: #fff;
+  background: #121212;
+}
+.header {
+  justify-content: space-between;
+  align-items: center;
+  height: 120px; /* 150 */
+
+  padding: 40px;
+
+  border-bottom: 1px solid #fff;
+}
+.flex {
+  display: flex;
+}
+.header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* animação img */
+
+@keyframes rotation-img {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header img:hover {
+  animation: rotation-img 3s linear;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(255, 255, 255, 0.9) 0px 0px 0px 1px;
+}
+.header .ul-header {
+  display: flex;
+  gap: 80px;
+}
+.header ul li a:hover {
+  text-shadow: 0 0 0.4em rgb(60, 48, 0), 0 0 0.4em rgb(60, 48, 0),
+    0 0 0.4em rgb(60, 48, 0);
+}
+.header ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header ul a::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background: #4d2000;
+}
+.header ul a:hover::before {
+  height: 0;
+}
+.header ul a:hover::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: #4d2000;
+}
+.header ul a:hover::after {
+  height: 1px;
+}
+#h1-header {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.header span {
+  color: #4d2000;
+  font-style: italic;
+  font-size: 3.2rem;
+}

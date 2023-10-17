@@ -1,0 +1,35 @@
+@media screen and (max-width: 870px) {
+  .header {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+  }
+  .header #h1-header {
+    display: none;
+  }
+  .ul-header {
+    gap: 40px;
+  }
+}
+@media (max-width: 820px) {
+  .header img {
+    max-width: 60px;
+    height: 60px;
+  }
+  .header .ul-header {
+    gap: 20px;
+  }
+  .header .ul-header li a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .header img {
+    display: none;
+  }
+}
+@media (max-width: 422px) {
+  .header {
+    padding: 0 15px;
+  }
+}

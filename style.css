@@ -1,0 +1,95 @@
+/* header */
+@import url("./header.css");
+
+/* responsividade  */
+
+@import url("./responsivo.css");
+
+:root {
+  --global-color: #fff;
+
+  --border-color-card: 1px solid#fff;
+}
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+/* main */
+
+main {
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 80%;
+
+  margin: 2.5% auto;
+
+  border-radius: 10px;
+
+  /* box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px, rgba(255, 255, 255, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+  /* box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px; */
+}
+.main .globalcard {
+  margin: 20px 20px;
+
+  width: 300px;
+  height: 500px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  border-radius: 10px;
+
+  background: #222;
+}
+.main .globalcard img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.globalcard a {
+  text-decoration: none;
+
+  color: #4d2000;
+
+  background: #000;
+
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* cards estilos separados */
+
+/* global temporiariamente */
+
+.globalcard {
+  border: var(--border-color-card);
+}
+.globalcard a {
+  border-radius: 10px;
+
+  border: var(--border-color-card);
+  background: transparent;
+  color: var(--global-color);
+  font-size: 1.3rem;
+}
+.globalcard a:hover {
+  box-shadow: 1px 1px 1px 1px #fff;
+}
+.globalcard h2 {
+  font-size: 3rem;
+}
+.globalcard h3 {
+  font-size: 2rem;
+}
